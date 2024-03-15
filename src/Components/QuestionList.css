@@ -1,0 +1,140 @@
+/* AddQuestion */
+@keyframes vibration {
+  0% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(-4px);
+  }
+}
+
+/* 질문 삭제 하기 */
+@keyframes deleteQuestionAnimation {
+  0% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    max-height: 1000px;
+  }
+  100% {
+    position: relative;
+    left: 1000px;
+    opacity: 0;
+    max-height: 0px;
+  }
+}
+@keyframes addQuestionAnimation {
+  0% {
+    position: relative;
+    left: 1000px;
+    opacity: 0;
+    max-height: 0px;
+  }
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.questionContent {
+  padding-left: 27px;
+}
+
+.handleDragDrop {
+  font-size: 23px;
+  color: rgb(126, 124, 124);
+  cursor: grab;
+}
+
+.questionNum {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: rgb(171, 85, 246);
+  text-align: center;
+  padding-left: 3px;
+}
+
+.questionTitle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.questionTitle input {
+  font-size: 20px;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 10px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: center;
+}
+.questionTitle input:focus {
+  outline: none;
+}
+
+.wrapper-Questions {
+  display: flex;
+}
+.vibration {
+  animation: vibration 0.1s 0.1s 10;
+}
+
+
+.new-question {
+  animation: addQuestionAnimation 800ms;
+}
+
+.deleteAnimation {
+  animation: deleteQuestionAnimation 800ms;
+  opacity: 0;
+}
+
+.changeQuestionPosition {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  float: right;
+}
+
+.changePositionIcon {
+  height: 30px;
+  font-size: 18px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.questionTopBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+  color: rgb(178, 64, 248);
+  cursor: pointer;
+}
+
+.questionTopBar svg {
+  padding:0 8px;
+}
+
+.addQuestions {
+  width: 91%;
+  height: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  padding-bottom: 30px;
+  color: rgb(178, 64, 248);
+  cursor: pointer;
+}
+
+.questionPlusBtn {
+  display: none;
+}
+
+.showQuestionBtn {
+  display: inline-block;
+}

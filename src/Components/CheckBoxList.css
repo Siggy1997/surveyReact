@@ -1,0 +1,61 @@
+/* CheckBoxList */
+
+.checkBoxList-Wrppaer {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.checkBoxList-Wrppaer input {
+  border: none;
+  background-color: rgba(186, 36, 255, 0);
+  font-size: 17px;
+  width: 70%;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+.checkBoxList-Wrppaer input::placeholder {
+  color: white;
+}
+
+.isChecked {
+  color: white;
+}
+
+.deleteCheckBoxList {
+  opacity: 0;
+  color: white;
+}
+
+.checkBoxList-Wrppaer input:focus {
+  outline: none;
+}
+
+.optionDragDrop {
+  opacity: 0;
+  font-size: 23px;
+  color: rgb(126, 124, 124);
+  cursor: grab;
+}
+
+.optionInput-Wrapper {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(186, 36, 255, 0.421);
+  width: 60%;
+  padding: 14px 10px;
+  border-radius: 30px;
+  margin-right: 73px;
+  margin-left: 24px;
+  max-width: 530px;
+  min-width: 270px;
+}
+
+.showOptionEdit {
+  opacity: 1;
+}

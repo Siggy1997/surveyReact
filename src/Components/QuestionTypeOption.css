@@ -1,0 +1,60 @@
+@keyframes hoverAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
+
+.QuestionTypeImgWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  display: flex;
+
+  background-color: rgba(186, 36, 255, 0.11);
+  padding: 7px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  transition: top 1s;
+}
+
+
+.QuestionTypeImgWrapper img {
+  width: 40px;
+  height: 40px;
+}
+
+.QuestionTypeImgWrapper:hover {
+  animation: hoverAnimation 0.5s ease forwards;
+  background-color: rgba(186, 36, 255, 0.236);
+}
+
+.selected {
+  background-color: rgba(186, 36, 255, 0.236);
+}
+
+.OptionImg {
+  box-sizing: border-box;
+  width: 120px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.optionName{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.726);
+}

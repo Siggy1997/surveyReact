@@ -1,0 +1,8 @@
+/* analysis */
+.analysisWrapper{
+    display: flex;
+}
+.analysisQuestionTitle{
+    display: flex;
+    margin-left: 30px;
+}

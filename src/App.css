@@ -1,0 +1,430 @@
+/* Noto Sans KR*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+/* Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+/* Hi Melody */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hi+Melody&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+/* SingleDay */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hi+Melody&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Single+Day&display=swap');
+
+/* Dongle */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Hi+Melody&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Single+Day&display=swap');
+
+/* SongMyung */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Hi+Melody&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Single+Day&family=Song+Myung&display=swap');
+
+/* Cookie */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cookie&family=Dongle&family=Hi+Melody&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Single+Day&family=Song+Myung&display=swap');
+
+/* KodeMono */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Hi+Melody&family=Kode+Mono:wght@400..700&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Single+Day&family=Song+Myung&display=swap');
+
+/* fontCSS ==============================================================================*/
+.NotoSans {
+  /* 기본 폰트 */
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.NotoSans input {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+}
+.Oswald input {
+  font-family: 'Oswald', sans-serif;
+}
+
+.HiMelody {
+  font-family: 'Hi Melody', sans-serif;
+}
+.HiMelody input {
+  font-family: 'Hi Melody', sans-serif;
+}
+
+.SingleDay {
+  font-family: 'Single Day', cursive;
+}
+.SingleDay input {
+  font-family: 'Single Day', cursive;
+}
+
+.Dongle {
+  font-family: 'Dongle', sans-serif;
+}
+.Dongle input {
+  font-family: 'Dongle', sans-serif;
+}
+
+.SongMyung {
+  font-family: 'Song Myung', serif;
+}
+.SongMyung input {
+  font-family: 'Song Myung', serif;
+}
+
+.Cookie {
+  font-family: 'Cookie', cursive;
+}
+.Cookie input {
+  font-family: 'Cookie', cursive;
+}
+
+.KodeMono {
+  font-family: "Kode Mono", monospace;
+}
+.KodeMono input {
+  font-family: "Kode Mono", monospace;
+}
+
+/* ======================================================================================== */
+
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.handleSurveyBox {
+  position: fixed;
+  top: 5px;
+  right: 30px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 50%;
+  height: 55px;
+}
+.handleSurveyBox svg {
+  font-size: 22px;
+  padding: 0 10px;
+  color: rgb(116, 116, 116);
+}
+
+.handleSurveyBox button {
+  border: none;
+  font-size: 20px;
+  background-color: rgb(171, 85, 246);
+  padding: 5px 18px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 30px;
+}
+
+.settingTopInfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+  padding: 5px 10px;
+  color:  rgb(130, 130, 130);;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.599);
+}
+
+.closeSetting {
+  font-size: 28px;
+  margin-right: 5px;
+}
+.settingLabel{
+  color: rgb(171, 85, 246);
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.surveySetting {
+  position: fixed;
+  top: 8vh;
+  right: 0;
+  width: 0px;
+  height: 100vh;
+  background-color: white;
+  z-index: 1001;
+  opacity: 0;
+  transition: all 1s;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.openSetting {
+  width: 330px;
+  opacity: 1;
+  overflow-y: auto;
+}
+
+.fontPreview-Wrapper {
+  box-sizing: border-box;
+  padding: 5px 20px;
+  background-color: rgba(186, 36, 255, 0.11);
+  height: 48px;
+  width: 82%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 11px 20px;
+}
+
+.fontPreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  height: 80%;
+  background-color: white;
+  width: 130px;
+}
+
+.backGroundColor{
+  width: 34px;
+  height: 34px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+/* icons */
+.icons {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#plusIcon {
+  font-size: 120px;
+  color: rgb(228, 231, 252);
+  text-align: center;
+}
+
+.Body-Wrapper {
+  margin-top: 8vh;
+  display: flex;
+}
+
+/* TopBar */
+.Top-Bar {
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 15px;
+
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  height: 8vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+/* SideBar */
+@media (min-width: 830px) {
+  .Side-Bar {
+    background-color: white;
+    padding: 20px;
+
+    min-width: 170px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 100vh;
+    border-right: 1px solid rgb(232, 232, 232);
+  }
+}
+
+@media (max-width: 830px) {
+  .Side-Bar {
+    display: none;
+  }
+}
+
+.Side-Bar div {
+  position: fixed;
+}
+
+.Side-Bar-Top-Title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+
+.Side-Bar a {
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.Side-Bar-Top {
+  margin-top: 60px;
+  height: 60vh;
+  width: 170px;
+  background-color: white;
+  z-index: 10;
+}
+
+.Side-Bar-Bottom {
+  position: fixed;
+  top: 80%;
+  min-height: 800px;
+  width: 150px;
+
+  box-sizing: border-box;
+  padding-top: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Content */
+.Item-Section {
+  padding: 40px;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* Add-Icon */
+.Add-Icon {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  box-sizing: border-box;
+
+  background: linear-gradient(rgb(162, 96, 255), rgb(162, 173, 255));
+  box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.2);
+
+  width: 230px;
+  height: 320px;
+  border-radius: 15px;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  padding: 30px;
+  margin-bottom: 50px;
+
+  cursor: pointer;
+}
+
+/* ItemList */
+
+/* Content-Wrapper */
+.Content-Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 800px;
+}
+
+.ItemListWrppaer {
+  width: 20%;
+  min-width: 300px;
+}
+
+/* newForm-Title */
+label {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(100, 100, 100);
+}
+
+.newForm-Wrapper {
+  padding: 40px 0 0 100px;
+  border-radius: 15px;
+  width: 87%;
+  max-width: 1200px;
+}
+
+.newForm-Content .newForm-TitleWrapper {
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 40px;
+  width: 91%;
+  min-width: 500px;
+  box-shadow: 0px 0px 8px -2px rgb(211, 167, 255);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+.newForm-Content .questionWrapper {
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px 40px 40px 13px;
+  width: 91%;
+  min-width: 500px;
+  box-shadow: 0px 0px 8px -2px rgb(211, 167, 255);
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.newForm-Title {
+  text-align: center;
+}
+
+.newForm-Title input {
+  box-sizing: border-box;
+  font-size: 30px;
+  border: none;
+
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 70%;
+  color: rgb(171, 85, 246);
+  text-align: center;
+}
+
+.newForm-Title input::placeholder {
+  color: rgb(171, 85, 246);
+}
+
+.newForm-SubTitle {
+  text-align: center;
+}
+
+.newForm-SubTitle input {
+  height: 18px;
+  padding: 5px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.newForm-Title input:focus,
+.newForm-SubTitle input:focus {
+  outline: none;
+}
+
+#newForm-Edit-Box {
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 21px;
+  box-shadow: 1px 5px 2px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  height: 266px;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+.new-question {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}

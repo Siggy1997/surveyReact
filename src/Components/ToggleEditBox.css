@@ -1,0 +1,65 @@
+/* ToggleEditBox */
+@keyframes openEditBox {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 170px;
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    height: 170px;
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.ToggleEditBox-Wrapper {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 170px;
+  height: 170px;
+
+  transform: translate(19%);
+  animation: openEditBox 700ms; 
+  background-color: white;
+  box-shadow: 3px 6px 8px 8px rgba(0, 0, 0, 0.2);
+
+  border-radius: 7px;
+  padding: 20px;
+  text-align: left;
+}
+
+.ToggleEditBox-Wrapper div{
+  display: flex;
+  align-items: center;
+
+  animation: showText 700ms;
+  margin-bottom: 10px;
+  color: rgb(111, 111, 111);
+  font-size: 14px;
+}
+
+.EditBoxIcon{
+  margin-right: 7px;
+  font-size: 19px;
+  
+}
+
+.DeleteBox{
+  color: rgb(255, 85, 85) !important;
+  margin-top: 15px;
+}
