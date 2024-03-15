@@ -195,6 +195,7 @@ function New({ isEdit, originData, isResponse, responseData }) {
         date: new Date().getTime(),
       });
     }
+    navigation('/');
   };
 
   // setSurvey((prevSurvey, newQuestion) => ({
